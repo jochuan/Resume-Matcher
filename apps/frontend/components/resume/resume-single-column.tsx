@@ -7,7 +7,7 @@ import type {
 } from '@/components/dashboard/resume-component';
 import { getSortedSections } from '@/lib/utils/section-helpers';
 import { formatDateRange } from '@/lib/utils';
-import { groupSkills } from '@/lib/utils/skill-groups';
+import { groupSkills, isPlainSkillList } from '@/lib/utils/skill-groups';
 import { DynamicResumeSection } from './dynamic-resume-section';
 import { DescriptionList } from './description-list';
 import { TagList } from './tag-list';
@@ -66,7 +66,7 @@ export const ResumeSingleColumn: React.FC<ResumeSingleColumnProps> = ({
 
     let finalHrefPrefix = hrefPrefix;
     if (
-      ['Website', 'LinkedIn', 'GitHub'].includes(label) &&
+      ['Website', 'LinkedIn'].includes(label) &&
       !value.startsWith('http') &&
       !value.startsWith('//')
     ) {
