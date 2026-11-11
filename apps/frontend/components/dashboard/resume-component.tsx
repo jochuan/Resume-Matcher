@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   ResumeSingleColumn,
+  ResumeSingleColumnCustom,
   ResumeTwoColumn,
   ResumeModern,
   ResumeModernTwoColumn,
@@ -227,6 +228,14 @@ const Resume: React.FC<ResumeProps> = ({
           additionalSectionLabels={additionalSectionLabels}
         />
       )}
+	  {mergedSettings.template === 'swiss-single-compact-skills' && (
+  <ResumeSingleColumnCustom
+    earlierExperienceLabel={sectionHeadings?.earlierExperience}
+    data={resumeData}
+    showContactIcons={mergedSettings.showContactIcons}
+    additionalSectionLabels={additionalSectionLabels}
+  />
+)}
       {mergedSettings.template === 'swiss-two-column' && (
         <ResumeTwoColumn
           earlierExperienceLabel={sectionHeadings?.earlierExperience}

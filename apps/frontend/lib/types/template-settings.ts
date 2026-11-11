@@ -7,6 +7,7 @@
 
 export type TemplateType =
   | 'swiss-single'
+  | 'swiss-single-compact-skills'
   | 'swiss-two-column'
   | 'modern'
   | 'modern-two-column'
@@ -276,6 +277,11 @@ export const TEMPLATE_OPTIONS: TemplateInfo[] = [
     name: 'Single Column',
     description: 'Traditional full-width layout with maximum content density',
   },
+  {
+  id: 'swiss-single-compact-skills',
+  name: 'Single Column Compact Skills',
+  description: 'Single-column layout with compact, categorized technical skills',
+},
   {
     id: 'swiss-two-column',
     name: 'Two Column',

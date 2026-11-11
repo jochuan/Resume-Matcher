@@ -449,6 +449,10 @@
           "name": "Single Column",
           "description": "Traditional full-width layout with maximum content density"
         },
+		"swissSingleCompactSkills": {
+           "name": "Single Column (Compact Skills)",
+          "description": "Single-column layout with technical skills organized by category"
+         },
         "swissTwoColumn": {
           "name": "Two Column",
           "description": "Experience-focused main column with sidebar for skills"

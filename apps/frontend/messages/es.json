@@ -449,6 +449,10 @@
           "name": "Una columna",
           "description": "Diseño tradicional de ancho completo con máxima densidad de contenido"
         },
+		"swissSingleCompactSkills": {
+           "name": "Columna única (habilidades compactas)",
+           "description": "Diseño tradicional de una sola columna con habilidades técnicas organizadas por categorías"
+        },
         "swissTwoColumn": {
           "name": "Dos columnas",
           "description": "Columna principal centrada en experiencia con barra lateral para habilidades"

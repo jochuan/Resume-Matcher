@@ -449,6 +449,10 @@
           "name": "1カラム",
           "description": "内容密度が高い伝統的な全幅レイアウト"
         },
+		"swissSingleCompactSkills": {
+          "name": "1段組み（コンパクトなスキル）",
+          "description": "技術スキルをカテゴリー別に整理した従来型の1段組みレイアウト"
+        },
         "swissTwoColumn": {
           "name": "2カラム",
           "description": "経験中心のメイン列とスキル用サイドバー"
