@@ -482,8 +482,14 @@ def _merge_additional(source: Any, candidate: Any) -> dict[str, list[str]]:
                     remaining_source_items[key] -= 1
                 else:
                     added_items.append(item)
-            if added_items and skills_end_in_open_label(source_items):
+
+            if (
+                added_items
+                and skills_end_in_open_label(source_items)
+                and added_items[0].strip() != SKILL_ROW_BREAK
+            ):
                 added_items.insert(0, SKILL_ROW_BREAK)
+
             result[field] = [*source_items, *added_items]
             continue
         remaining_candidate_items = Counter(
