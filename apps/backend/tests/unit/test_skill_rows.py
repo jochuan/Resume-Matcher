@@ -90,3 +90,20 @@ def test_ai_rewrite_keeps_skills_under_their_bare_labels() -> None:
         SKILL_ROW_BREAK,
         "Kubernetes",
     ]
+def test_finalize_is_idempotent_when_appending_after_open_label() -> None:
+    source = _resume(["Python", "Laboratory:"])
+    candidate = _resume(["Python", "Laboratory:", "PCR"])
+
+    first = finalize_ai_resume(
+        source, candidate, allow_appended_rows=True
+    )
+
+    second = finalize_ai_resume(
+        source, first, allow_appended_rows=True
+    )
+
+    expected = ["Python", "Laboratory:", SKILL_ROW_BREAK, "PCR"]
+
+    assert first["additional"]["technicalSkills"] == expected
+    assert second["additional"]["technicalSkills"] == expected
+    assert second == first
