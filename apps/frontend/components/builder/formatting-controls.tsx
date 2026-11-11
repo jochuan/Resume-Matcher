@@ -129,6 +129,10 @@ export const FormattingControls: React.FC<FormattingControlsProps> = ({ settings
         name: t('builder.formatting.templates.swissSingle.name'),
         description: t('builder.formatting.templates.swissSingle.description'),
       },
+	  'swiss-single-compact-skills': {
+        name: t('builder.formatting.templates.swissSingleCompactSkills.name'),
+        description: t('builder.formatting.templates.swissSingleCompactSkills.description'),
+      },
       'swiss-two-column': {
         name: t('builder.formatting.templates.swissTwoColumn.name'),
         description: t('builder.formatting.templates.swissTwoColumn.description'),

@@ -10,11 +10,12 @@ import {
 } from '@/lib/types/template-settings';
 
 describe('template registration', () => {
-  it('includes all ten templates with non-empty metadata', () => {
+  it('includes all eleven templates with non-empty metadata', () => {
     const ids = TEMPLATE_OPTIONS.map((t) => t.id);
     expect(ids).toEqual(
       expect.arrayContaining<TemplateType>([
         'swiss-single',
+		'swiss-single-compact-skills',
         'swiss-two-column',
         'modern',
         'modern-two-column',
@@ -26,7 +27,7 @@ describe('template registration', () => {
         'deedy',
       ])
     );
-    expect(ids).toHaveLength(10);
+    expect(ids).toHaveLength(11);
 
     for (const opt of TEMPLATE_OPTIONS) {
       expect(opt.name.length).toBeGreaterThan(0);

@@ -449,6 +449,10 @@
           "name": "Une colonne",
           "description": "Mise en page traditionnelle pleine largeur avec densité de contenu maximale"
         },
+		"swissSingleCompactSkills": {
+          "name": "Une colonne (compétences compactes)",
+          "description": "Mise en page traditionnelle sur une seule colonne avec les compétences techniques organisées par catégories"
+        },
         "swissTwoColumn": {
           "name": "Deux colonnes",
           "description": "Colonne principale centrée sur l'expérience avec barre latérale pour les compétences"

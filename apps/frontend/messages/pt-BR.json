@@ -447,6 +447,10 @@
           "name": "Coluna Única",
           "description": "Layout tradicional de largura total com máxima densidade de conteúdo"
         },
+		"swissSingleCompactSkills": {
+          "name": "Coluna Única (Habilidades Compactas)",
+          "description": "Layout de coluna única com habilidades técnicas organizadas por categorias"
+        },
         "swissTwoColumn": {
           "name": "Duas Colunas",
           "description": "Coluna principal focada em experiência com barra lateral para habilidades"

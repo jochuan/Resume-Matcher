@@ -674,6 +674,7 @@ class JobUploadResponse(BaseModel):
 # Improvement Models
 ResumeTemplate = Literal[
     "swiss-single",
+    "swiss-single-compact-skills",
     "swiss-two-column",
     "modern",
     "modern-two-column",

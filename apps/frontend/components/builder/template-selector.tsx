@@ -22,6 +22,10 @@ export const TemplateSelector: React.FC<TemplateSelectorProps> = ({ value, onCha
       name: t('builder.formatting.templates.swissSingle.name'),
       description: t('builder.formatting.templates.swissSingle.description'),
     },
+	'swiss-single-compact-skills': {
+	  name: t('builder.formatting.templates.swissSingleCompactSkills.name'),
+      description: t('builder.formatting.templates.swissSingleCompactSkills.description'),
+    },
     'swiss-two-column': {
       name: t('builder.formatting.templates.swissTwoColumn.name'),
       description: t('builder.formatting.templates.swissTwoColumn.description'),
@@ -110,7 +114,7 @@ export const TemplateThumbnail: React.FC<TemplateThumbnailProps> = ({ type, isAc
   const borderColor = isActive ? 'border-primary' : 'border-steel';
   const accentColor = isActive ? 'bg-primary/70' : 'bg-primary/50';
 
-  if (type === 'swiss-single') {
+  if (type === 'swiss-single' || type === 'swiss-single-compact-skills') {
     // Single column thumbnail
     return (
       <div className={`w-16 h-20 border ${borderColor} bg-white p-2 flex flex-col gap-1`}>

@@ -449,6 +449,10 @@
           "name": "单栏",
           "description": "传统全宽布局，内容密度最高"
         },
+		"swissSingleCompactSkills": {
+          "name": "单栏（紧凑技能）",
+          "description": "按类别组织技术技能的传统单栏布局"
+        },
         "swissTwoColumn": {
           "name": "双栏",
           "description": "以经历为主的主栏布局，侧栏展示技能"
